@@ -115,7 +115,7 @@ void sendAtCommand() {
           Serial.print("Command value: ");
 
           for (int i = 0; i < atResponse.getValueLength(); i++) {
-            Serial.print(atResponse.getValue()[i]);
+            Serial.print(atResponse.getValue()[i], HEX);
             Serial.print(" ");
           }
           Serial.println();
